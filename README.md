@@ -1,15 +1,9 @@
 ## Multi-Reference QA Generation
 
 
-Code for training and evaluation of the Transformer-based question generation model introduced in the following ECAI 2023 paper:
+Code for training and evaluation of the Transformer-based question generation model introduced in the ECAI 2023 paper [Uniform training and marginal decoding for multi-reference question-answer generation](https://ebooks.iospress.nl/doi/10.3233/FAIA230539)
 
-<div align="center">    
- 
-### Uniform training and marginal decoding for multi-reference question-answer generation 
-
-</div>
-
-If you find our [paper](https://ebooks.iospress.nl/doi/10.3233/FAIA230539), datasets, code or framework useful, please reference this work:
+If you find our paper, datasets or code useful, please reference this work:
 
 ```
 @Inproceedings{Vakulenko2023,
@@ -59,14 +53,19 @@ python run_evaluation.py uniform_mixed_entities_t5-base_10-epochs greedy
 Download from: https://figshare.com/collections/multi-reference-qa-generation/7753064
 
 * original NewsQA baseline:
+
 	baseline_2-epochs
 
 * baseline fine-tuned on entities (entities_answers_trainer.py):
+
 	aqg_entities_t5-base_10-epochs
+
 	standard_2-epochs
 
 * baseline fine-tuned on entities + uniform answer tokens (fine_tune_mixed.py):
+
 	uniform_mixed_entities_t5-base_10-epochs
+
 	uniform_2-epochs
 
 
@@ -75,9 +74,11 @@ Download from: https://figshare.com/collections/multi-reference-qa-generation/77
 Download from: https://figshare.com/collections/multi-reference-qa-generation/7753064
 
 * [NewsQA](https://github.com/Maluuba/newsqa) (generated entity-driven QA benchmark):
+
 	'./data/NewsQA/entity-driven-benchmark-test-dedup.csv'
 
 * [MONSERRATE corpus](https://github.com/hprodrig/MONSERRATE_Corpus)
+
 	'./data/MONSERRATE_Corpus.txt'
 
 
